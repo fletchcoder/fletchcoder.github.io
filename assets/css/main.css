@@ -3268,7 +3268,7 @@ input[type="button"]:disabled,
 }
 
 .spotlight.style1 .content {
-	border-color: #116820;
+	border-color: rgba(23, 24, 32, 0.95);
 }
 
 .spotlight.style2 .content {
