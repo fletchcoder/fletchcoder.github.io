@@ -2552,6 +2552,11 @@ input[type="radio"] + label:before {
 	text-decoration: none;
 }
 
+.icon.solid.alt img {
+	width: 70%;
+	padding-top: 15px;
+}
+
 .icon.alt:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
