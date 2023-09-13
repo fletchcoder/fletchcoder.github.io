@@ -891,7 +891,7 @@ body.landing.is-preload:after {
 }
 
 .row > .col-8 {
-	width: 66.66667%;
+	width: 100%;
 }
 
 .row > .off-8 {
@@ -975,6 +975,10 @@ body.landing.is-preload:after {
 
 .row.gtr-50.gtr-uniform {
 	margin-top: -1.25em;
+}
+
+.row.gtr-uniform.gtr-50 {
+	width: 100%;
 }
 
 .row.gtr-50.gtr-uniform > * {
@@ -3606,7 +3610,6 @@ body.landing #header {
 #banner {
 	background-attachment: fixed;
 	background-color: #272833;
-	background-image: url("../../images/banner.jpg");
 	background-position: center center;
 	background-size: cover;
 	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
