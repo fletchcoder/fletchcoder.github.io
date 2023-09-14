@@ -15,6 +15,6 @@ A slot machine that allows users to enter a total balance to play with along wit
 
 ## Hola Fresca Mexican Grill 
 ![image](https://github.com/fletchcoder/fletchcoder.github.io/assets/131314453/490006e0-715a-4fe8-936c-cad7f6dffd41)
-A sample restaurant page that is complete with an order page, contact form, reviews section and complete menu. It uses Bootstrap to create a responsive website and add social media icons. JavaScript is used to create image sliders with manual buttons.
+A sample restaurant page that is complete with an order page, contact form, reviews section and complete menu. It uses Bootstrap to create a responsive website and add social media icons. JavaScript is used to create an image slider with manual buttons.
 
 
