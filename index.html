@@ -16,6 +16,34 @@
 		<noscript
 			><link rel="stylesheet" href="assets/css/noscript.css"
 		/></noscript>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: "wVHWcBzmil1tiBBQC",
+				});
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById("contact-form")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+
+						emailjs
+							.sendForm("service_rto9dwq", "template_q8ji477", this)
+							.then(() => {
+								window.alert("Message sent!");
+							})
+							.catch(() => {
+								window.alert("ERROR! Message failed to send.");
+							});
+					});
+			};
+		</script>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -318,16 +346,13 @@
 						<h2>Contact</h2>
 						<p>Send me an e-mail</p>
 					</header>
-					<form
-						method="post"
-						action="https://formsubmit.co/03f61d3e2ca30c7b986ea9acfa2e04b5"
-						class="cta">
+					<form id="contact-form" class="cta">
 						<div class="row gtr-uniform gtr-50">
 							<div class="col-8 col-12-xsmall">
 								<input
 									type="text"
-									name="name"
 									placeholder="Your Name"
+									name="user_name"
 									required />
 							</div>
 						</div>
@@ -335,15 +360,11 @@
 							<div class="col-8 col-12-xsmall">
 								<input
 									type="email"
-									name="email"
 									placeholder="Your Email Address"
+									name="user_email"
 									required />
 							</div>
 						</div>
-						<input
-							type="hidden"
-							name="_subject"
-							value="Potential Job Opportunity!" />
 						<div class="row gtr-uniform gtr-50">
 							<div class="col-8 col-12-xsmall">
 								<textarea
