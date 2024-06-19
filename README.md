@@ -1,13 +1,9 @@
 # Portfolio Website
 My personal portfolio that hosts my various front-end projects. 
 
-## Crazy's Card Shop 
-![image](https://github.com/fletchcoder/fletchcoder.github.io/assets/131314453/5c99db5d-5914-4a75-a7ea-897f56a64a7b)
-An online store that sells cards for Pokemon, Yu-Gi-Oh!, and Magic The Gathering. It is built with CSS, JavaScript, React, and Nextjs 13 and it is able to maintain global state with the use of Redux Toolkit and Redux Persist.
-
-## Super Star Racing 
-![image](https://github.com/fletchcoder/fletchcoder.github.io/assets/131314453/ead998b7-504a-473d-9fb8-eb78a870ea72)
-A racing game that uses React useState and useEffect to simulate a race between two vehicles. Framer-motion is used to move the vehicles from one side of the screen to the other. CSS media queries are used for responsiveness.
+## Ragin' Riders
+![image](https://github.com/fletchcoder/fletchcoder.github.io/assets/131314453/2e352fd6-2b1d-4768-bc4b-03f0122325c0)
+A website that sells gear for motorcycle enthusiasts and parts for motorcycles. Uses MongoDB to store all the store products and blogs. Uses Redux Toolkit and Redux Persist to create a constant global store that has complete cart functionality.
 
 ## Super Slot Machine 
 ![image](https://github.com/fletchcoder/fletchcoder.github.io/assets/131314453/64348ad1-9f96-4f96-80f8-33ccdc3ab5dc)
