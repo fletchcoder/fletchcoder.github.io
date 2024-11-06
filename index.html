@@ -1,133 +1,140 @@
 <!DOCTYPE html>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Web Developer - HTML, CSS, JavaScript | Drake Fletcher</title>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript
-			><link rel="stylesheet" href="assets/css/noscript.css"
-		/></noscript>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-		<script type="text/javascript">
-			(function () {
-				emailjs.init({
-					publicKey: "wVHWcBzmil1tiBBQC",
-				});
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function () {
-				document
-					.getElementById("contact-form")
-					.addEventListener("submit", function (event) {
-						event.preventDefault();
+    <head>
+        <title>Web Developer - HTML, CSS, JavaScript | Drake Fletcher</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript
+            ><link rel="stylesheet" href="assets/css/noscript.css"
+        /></noscript>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "wVHWcBzmil1tiBBQC",
+                });
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document
+                    .getElementById("contact-form")
+                    .addEventListener("submit", function (event) {
+                        event.preventDefault();
 
-						emailjs
-							.sendForm("service_rto9dwq", "template_q8ji477", this)
-							.then(() => {
-								window.alert("Message sent!");
-							})
-							.catch(() => {
-								window.alert("ERROR! Message failed to send.");
-							});
-					});
-			};
-		</script>
-	</head>
-	<body class="is-preload landing">
-		<div id="page-wrapper">
-			<!-- Header -->
-			<header id="header">
-				<h1 id="logo"></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one">About</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#six">Skills</a></li>
-						<li>
-							<a
-								href="https://www.linkedin.com/in/drake-fletcher-330004292/"
-								class="icon brands alt fa-linkedin-in"
-								target="_blank"
-								><span class="label">LinkedIn</span></a
-							>
-						</li>
-						<li>
-							<a
-								href="https://github.com/fletchcoder"
-								class="icon brands alt fa-github"
-								target="_blank"
-								><span class="label">GitHub</span></a
-							>
-						</li>
-						<li><a href="#seven" class="button primary">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+                        emailjs
+                            .sendForm(
+                                "service_rto9dwq",
+                                "template_q8ji477",
+                                this
+                            )
+                            .then(() => {
+                                window.alert("Message sent!");
+                            })
+                            .catch(() => {
+                                window.alert("ERROR! Message failed to send.");
+                            });
+                    });
+            };
+        </script>
+    </head>
+    <body class="is-preload landing">
+        <div id="page-wrapper">
+            <!-- Header -->
+            <header id="header">
+                <h1 id="logo"></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#one">About</a></li>
+                        <li><a href="#three">Projects</a></li>
+                        <li><a href="#six">Skills</a></li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/drake-fletcher-330004292/"
+                                class="icon brands alt fa-linkedin-in"
+                                target="_blank"
+                                ><span class="label">LinkedIn</span></a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/fletchcoder"
+                                class="icon brands alt fa-github"
+                                target="_blank"
+                                ><span class="label">GitHub</span></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#seven" class="button primary">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-			<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-					<header>
-						<h2>Drake Fletcher</h2>
-						<p>Web Developer</p>
-					</header>
-				</div>
-				<a href="#one" class="goto-next scrolly">Next</a>
-			</section>
+            <!-- Banner -->
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h2>Drake Fletcher</h2>
+                        <p>Web Developer</p>
+                    </header>
+                </div>
+                <a href="#one" class="goto-next scrolly">Next</a>
+            </section>
 
-			<!-- One -->
-			<section id="one" class="spotlight style1 bottom">
-				<span class="image fit main"
-					><img
-						src="images/mountains.jpg"
-						alt="Photoshop Signature with Clipping Mask of Tiger"
-				/></span>
-				<div class="content">
-					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-medium">
-								<header>
-									<h2>About Me</h2>
-								</header>
-							</div>
-							<div class="col-4 col-12-medium">
-								<p>
-									My name is Drake and I've had a passion for computers for as
-									long as I can remember. I enjoy making websites and sharing my
-									designs with the world. I have experience in HTML, CSS, and
-									JavaScript, but I also use Photoshop to bring my creative
-									ideas to life.
-								</p>
-							</div>
-							<div class="col-4 col-12-medium">
-								<p>
-									I have an associate's degree in Web Development from Cosumnes
-									River College that helped me with the essentials of front end
-									design. Additionally, I am familiar with necessary frameworks
-									and libraries in web development such as React, Next.js, and
-									Bootstrap.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#three" class="goto-next scrolly">Next</a>
-			</section>
+            <!-- One -->
+            <section id="one" class="spotlight style1 bottom">
+                <span class="image fit main"
+                    ><img
+                        src="images/mountains.jpg"
+                        alt="Photoshop Signature with Clipping Mask of Tiger"
+                /></span>
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 col-12-medium">
+                                <header>
+                                    <h2>About Me</h2>
+                                </header>
+                            </div>
+                            <div class="col-4 col-12-medium">
+                                <p>
+                                    My name is Drake and I've had a passion for
+                                    computers for as long as I can remember. I
+                                    enjoy making websites and sharing my designs
+                                    with the world. I have experience in HTML,
+                                    CSS, and JavaScript, but I also use
+                                    Photoshop to bring my creative ideas to
+                                    life.
+                                </p>
+                            </div>
+                            <div class="col-4 col-12-medium">
+                                <p>
+                                    I have an associate's degree in Web
+                                    Development from Cosumnes River College that
+                                    helped me with the essentials of front end
+                                    design. Additionally, I am familiar with
+                                    necessary frameworks and libraries in web
+                                    development such as React, Next.js, and
+                                    Bootstrap.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#three" class="goto-next scrolly">Next</a>
+            </section>
 
-			<!-- Two -->
-			<!-- <section id="two" class="spotlight style2 right">
+            <!-- Two -->
+            <!-- <section id="two" class="spotlight style2 right">
 				<span class="image fit main"
 					><img src="images/cards.jpg" alt="Crazy's Card Shop - Drake Fletcher"
 				/></span>
@@ -163,275 +170,295 @@
 				<a href="#three" class="goto-next scrolly">Next</a>
 			</section> -->
 
-			<!-- Three -->
-			<section id="three" class="spotlight style3 left">
-				<span class="image fit main bottom"
-					><img src="images/ragin.jpg" alt="Super Star Racing - Drake Fletcher"
-				/></span>
-				<div class="content">
-					<header>
-						<h2>Ragin' Riders</h2>
-						<p>CSS, React, Nextjs, MongoDB, TypeScript</p>
-					</header>
-					<p>
-						A website that sells gear for motorcycle enthusiasts and parts for
-						motorcycles. Uses MongoDB to store all the store products and blogs.
-						Uses Redux Toolkit and Redux Persist to create a constant global
-						store that has complete cart functionality.
-					</p>
-					<ul class="actions">
-						<li>
-							<a
-								href="https://ragin-riders.vercel.app/"
-								target="_blank"
-								class="button secondary2"
-								>See More</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://github.com/fletchcoder/Ragin-Riders"
-								target="_blank"
-								class="button secondary2"
-								>View Code</a
-							>
-						</li>
-					</ul>
-				</div>
-				<a href="#four" class="goto-next scrolly">Next</a>
-			</section>
+            <!-- Three -->
+            <section id="three" class="spotlight style5 left">
+                <span class="image fit main bottom"
+                    ><img
+                        src="images/solar.png"
+                        alt="Solar System Explorer - Drake Fletcher"
+                /></span>
+                <div class="content">
+                    <header>
+                        <h2>Solar System Explorer</h2>
+                        <p>HTML, CSS, JavaScript, Three.js</p>
+                    </header>
+                    <p>
+                        Explore the eight major planets of our solar system with
+                        this site of 3D Three.js models. Each planet can be
+                        zoomed on and rotated to create a complete viewing
+                        experience. Planets have rotation, glow, and lighting as
+                        necessary.
+                    </p>
+                    <ul class="actions">
+                        <li>
+                            <a
+                                href="https://solar-system-two-plum.vercel.app/"
+                                target="_blank"
+                                class="button secondary4"
+                                >See More</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/fletchcoder/Solar-System"
+                                target="_blank"
+                                class="button secondary4"
+                                >View Code</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <a href="#four" class="goto-next scrolly">Next</a>
+            </section>
 
-			<!-- Four -->
-			<section id="four" class="spotlight style4 right">
-				<span class="image fit main"
-					><img
-						src="images/slots.jpg"
-						alt="Super Slot Machine - Drake Fletcher"
-				/></span>
-				<div class="content">
-					<header>
-						<h2>Super Slot Machine</h2>
-						<p>HTML, CSS, JavaScript</p>
-					</header>
-					<p>
-						A slot machine that allows users to enter a total balance to play
-						with along with a bet per each line. It tells the user whether they
-						won, lost, or hit a jackpot. CSS is used for responsiveness and
-						JavaScript DOM manipulation makes the machine functional.
-					</p>
-					<ul class="actions">
-						<li>
-							<a
-								href="https://super-slot-machine.vercel.app/"
-								target="_blank"
-								class="button secondary3"
-								>See More</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://github.com/fletchcoder/Super-Slot-Machine"
-								target="_blank"
-								class="button secondary3"
-								>View Code</a
-							>
-						</li>
-					</ul>
-				</div>
-				<a href="#five" class="goto-next scrolly">Next</a>
-			</section>
+            <!-- Four -->
+            <section id="four" class="spotlight style4 right">
+                <span class="image fit main"
+                    ><img
+                        src="images/car.png"
+                        alt="Car Builder - Drake Fletcher"
+                /></span>
+                <div class="content">
+                    <header>
+                        <h2>Car Builder</h2>
+                        <p>HTML, CSS, JavaScript, React, Three.js</p>
+                    </header>
+                    <p>
+                        A sandbox game that allows you to build any kind of car
+                        you want. Place blocks, change block textures, and run
+                        and jump around the 100x100 plane. The world will
+                        autosave thanks to Zustand state management, so no need
+                        to worry about losing build progress.
+                    </p>
+                    <ul class="actions">
+                        <li>
+                            <a
+                                href="https://car-builder.vercel.app/"
+                                target="_blank"
+                                class="button secondary3"
+                                >See More</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/fletchcoder/Car-Builder"
+                                target="_blank"
+                                class="button secondary3"
+                                >View Code</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <a href="#five" class="goto-next scrolly">Next</a>
+            </section>
 
-			<!-- Five -->
-			<section id="five" class="spotlight style5 left">
-				<span class="image fit main bottom"
-					><img
-						src="images/holafresca.jpg"
-						alt="Hola Fresca Mexican Restaurant - Drake Fletcher"
-				/></span>
-				<div class="content">
-					<header>
-						<h2>Hola Fresca - Mexican Restaurant</h2>
-						<p>HTML, CSS, JavaScript, Bootstrap</p>
-					</header>
-					<p>
-						A sample restaurant page that is complete with an order page,
-						contact form, reviews section and complete menu. Uses Bootstrap to
-						create a responsive website and add social media icons. JavaScript
-						is used to create an image slider with manual buttons.
-					</p>
-					<ul class="actions">
-						<li>
-							<a
-								href="https://hola-fresca-mexican-grill.vercel.app/"
-								target="_blank"
-								class="button secondary4"
-								>See More</a
-							>
-						</li>
-						<li>
-							<a
-								href="https://github.com/fletchcoder/Hola-Fresca"
-								target="_blank"
-								class="button secondary4"
-								>View Code</a
-							>
-						</li>
-					</ul>
-				</div>
-				<a href="#six" class="goto-next scrolly">Next</a>
-			</section>
+            <!-- Five -->
+            <section id="five" class="spotlight style3 left">
+                <span class="image fit main bottom"
+                    ><img
+                        src="images/ragin.jpg"
+                        alt="Ragin Riders - Drake Fletcher"
+                /></span>
+                <div class="content">
+                    <header>
+                        <h2>Ragin' Riders</h2>
+                        <p>CSS, React, Nextjs, MongoDB, TypeScript</p>
+                    </header>
+                    <p>
+                        A website that sells gear for motorcycle enthusiasts and
+                        parts for motorcycles. Uses MongoDB to store all the
+                        store products and blogs. Uses Redux Toolkit and Redux
+                        Persist to create a constant global store that has
+                        complete cart functionality.
+                    </p>
+                    <ul class="actions">
+                        <li>
+                            <a
+                                href="https://ragin-riders.vercel.app/"
+                                target="_blank"
+                                class="button secondary2"
+                                >See More</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/fletchcoder/Ragin-Riders"
+                                target="_blank"
+                                class="button secondary2"
+                                >View Code</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <a href="#six" class="goto-next scrolly">Next</a>
+            </section>
 
-			<!-- Six -->
-			<section id="six" class="wrapper style1 special fade-up">
-				<div class="container">
-					<header class="major">
-						<h2>Skills</h2>
-					</header>
-					<div class="box alt">
-						<div class="row gtr-uniform">
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-								</span>
-								<h3>HTML5</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-								</span>
-								<h3>CSS3</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-								</span>
-								<h3>JavaScript</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-								</span>
-								<h3>React</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-								</span>
-								<h3>Bootstrap</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
-								</span>
-								<h3>Nextjs</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-								</span>
-								<h3>TypeScript</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg" />
-								</span>
-								<h3>MongoDB</h3>
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="icon solid alt major">
-									<img
-										src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-								</span>
-								<h3>Git</h3>
-							</section>
-						</div>
-					</div>
-					<footer class="major"></footer>
-				</div>
-			</section>
+            <!-- Six -->
+            <section id="six" class="wrapper style1 special fade-up">
+                <div class="container">
+                    <header class="major">
+                        <h2>Skills</h2>
+                    </header>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    />
+                                </span>
+                                <h3>HTML5</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    />
+                                </span>
+                                <h3>CSS3</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    />
+                                </span>
+                                <h3>JavaScript</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                    />
+                                </span>
+                                <h3>React</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span
+                                    class="icon solid alt major"
+                                    style="background-color: white"
+                                >
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original-wordmark.svg"
+                                    />
+                                </span>
+                                <h3>Three.js</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                                    />
+                                </span>
+                                <h3>Nextjs</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                    />
+                                </span>
+                                <h3>TypeScript</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg"
+                                    />
+                                </span>
+                                <h3>MongoDB</h3>
+                            </section>
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                                    />
+                                </span>
+                                <h3>Git</h3>
+                            </section>
+                        </div>
+                    </div>
+                    <footer class="major"></footer>
+                </div>
+            </section>
 
-			<!-- Seven -->
-			<section id="seven" class="wrapper style2 special fade">
-				<div class="container">
-					<header>
-						<h2>Contact</h2>
-						<p>Send me an e-mail</p>
-					</header>
-					<form id="contact-form" class="cta">
-						<div class="row gtr-uniform gtr-50">
-							<div class="col-8 col-12-xsmall">
-								<input
-									type="text"
-									placeholder="Your Name"
-									name="user_name"
-									required />
-							</div>
-						</div>
-						<div class="row gtr-uniform gtr-50">
-							<div class="col-8 col-12-xsmall">
-								<input
-									type="email"
-									placeholder="Your Email Address"
-									name="user_email"
-									required />
-							</div>
-						</div>
-						<div class="row gtr-uniform gtr-50">
-							<div class="col-8 col-12-xsmall">
-								<textarea
-									rows="6"
-									name="message"
-									placeholder="Your Message"
-									required></textarea>
-							</div>
-						</div>
-						<button type="submit">Send Message</button>
-					</form>
-				</div>
-			</section>
+            <!-- Seven -->
+            <section id="seven" class="wrapper style2 special fade">
+                <div class="container">
+                    <header>
+                        <h2>Contact</h2>
+                        <p>Send me an e-mail</p>
+                    </header>
+                    <form id="contact-form" class="cta">
+                        <div class="row gtr-uniform gtr-50">
+                            <div class="col-8 col-12-xsmall">
+                                <input
+                                    type="text"
+                                    placeholder="Your Name"
+                                    name="user_name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="row gtr-uniform gtr-50">
+                            <div class="col-8 col-12-xsmall">
+                                <input
+                                    type="email"
+                                    placeholder="Your Email Address"
+                                    name="user_email"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="row gtr-uniform gtr-50">
+                            <div class="col-8 col-12-xsmall">
+                                <textarea
+                                    rows="6"
+                                    name="message"
+                                    placeholder="Your Message"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li>
-						<a
-							href="https://www.linkedin.com/in/drake-fletcher-330004292/"
-							class="icon brands alt fa-linkedin-in"
-							target="_blank"
-							><span class="label">LinkedIn</span></a
-						>
-					</li>
-					<li>
-						<a
-							href="https://github.com/fletchcoder"
-							class="icon brands alt fa-github"
-							target="_blank"
-							><span class="label">GitHub</span></a
-						>
-					</li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Drake Fletcher. All rights reserved.</li>
-				</ul>
-			</footer>
-		</div>
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/drake-fletcher-330004292/"
+                            class="icon brands alt fa-linkedin-in"
+                            target="_blank"
+                            ><span class="label">LinkedIn</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/fletchcoder"
+                            class="icon brands alt fa-github"
+                            target="_blank"
+                            ><span class="label">GitHub</span></a
+                        >
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Drake Fletcher. All rights reserved.</li>
+                </ul>
+            </footer>
+        </div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
